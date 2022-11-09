@@ -72,7 +72,7 @@ put_char:
 .is_carriage_return_end:
 	add bx, 80	;\r + \n
 	cmp bx, 2000
-.is_line_feed_end
+.is_line_feed_end:
 	jl .set_cursor
 	
 ;--------------line1~24 -> line0~23--------------
