@@ -29,7 +29,7 @@ SECTION MBR vstart=MBR_BASE_ADDR
 
 	mov eax, LOADER_START_SECTOR
 	mov bx, LOADER_BASE_ADDR
-	mov cx, 1
+	mov cx, 2
 	call rd_disk_m_16
 	
 	jmp LOADER_BASE_ADDR
