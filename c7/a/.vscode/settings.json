@@ -1,3 +1,9 @@
 {
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "global.h": "c",
+        "stdint.h": "c",
+        "io.h": "c",
+        "interrupt.h": "c"
+    }
 }
