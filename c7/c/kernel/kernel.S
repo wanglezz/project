@@ -6,7 +6,6 @@
 extern idt_table
 
 section .data
-intr_str db "interrupt occur!", 0xa, 0
 global intr_entry_table
 intr_entry_table:
 
@@ -18,10 +17,8 @@ intr%1entry:                ;中断处理程序入口
     push ds
     push es
     push fs
-    push fs
     push gs
     pushad                  ;PUSHAD压入32位寄存器，其入栈顺序是：eax,ecx,edx,ebx,esp,ebp,esi,sdi
-    add esp, 4
 
     mov al,0x20
     out 0xa0,al
